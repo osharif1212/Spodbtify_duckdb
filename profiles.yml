@@ -14,7 +14,8 @@ spodbtify:
   
     test:
       type: duckdb
-      path: 'test.spodbtify.duckdb'  # 👈 New database file
+      path: 'test.spodbtify.duckdb' 
+      #schema: spodbtify
       threads: 4
 
-  target: test  # 👈 Change the default target to "test"
+  target: test
