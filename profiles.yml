@@ -1,0 +1,20 @@
+spodbtify:
+  outputs:
+    dev:
+      type: duckdb
+      path: 'dev.spodbtify.duckdb'
+      #schema: 'dev'
+      threads: 4
+
+    prod:
+      type: duckdb
+      path: 'prod.spodbtify.duckdb'
+      #schema: 'prod'
+      threads: 24
+  
+    test:
+      type: duckdb
+      path: 'testspotify.duckdb'  # 👈 New database file
+      threads: 4
+
+  target: test  # 👈 Change the default target to "test"
