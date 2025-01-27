@@ -14,7 +14,7 @@ spodbtify:
   
     test:
       type: duckdb
-      path: 'testspotify.duckdb'  # 👈 New database file
+      path: 'test.spodbtify.duckdb'  # 👈 New database file
       threads: 4
 
   target: test  # 👈 Change the default target to "test"
